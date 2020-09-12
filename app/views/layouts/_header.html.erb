@@ -1,0 +1,18 @@
+<p>このアプリについて</p>
+<a href="https://www.windy.com/26.210/127.690?rain,2020-09-13-06,20.335,124.885,6">お天気</a>
+<% if player_signed_in? %>
+  <%= link_to "アカウント編集", edit_player_registration_path %>
+  <%= link_to "ログアウト", destroy_player_session_path, method: :delete %>
+  <%= "【ログイン中のアドレス】#{current_player.email}" %>
+<% else %>
+  <%= link_to "チーム登録", new_player_registration_path %>
+  <%= link_to "ログイン", new_player_session_path %>
+<% end %>
+<% if team_signed_in? %>
+  <%= link_to "アカウント編集", edit_team_registration_path %>
+  <%= link_to "ログアウト", destroy_team_session_path, method: :delete %>
+  <%= "【ログイン中のアドレス】#{current_team.email}" %>
+<% else %>
+  <%= link_to "プレーヤー登録", new_team_registration_path %>
+  <%= link_to "ログイン", new_team_session_path %>
+<% end %>
