@@ -7,12 +7,39 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+var Calendar = require("tui-calendar/dist/tui-calendar")
+require('tui-date-picker/dist/tui-date-picker');
+require('tui-time-picker/dist/tui-time-picker');
 
+document.addEventListener("turbolinks:load", () => {
+  var calendar = new Calendar('#calendar', {
+    defaultView: 'month',
+    taskView: true,
+    template: {
+      monthDayname: function (dayname) {
+        return '<span class="calendar-week-dayname-name">' + dayname.label + '</span>';
+      }
+    }
+  });
 
-
-// Uncomment to copy all static images under ../images to the output folder and reference
-// them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
-// or the `imagePath` JavaScript helper below.
-//
-// const images = require.context('../images', true)
-// const imagePath = (name) => images(name, true)
+  calendar.createSchedules([{
+      id: '1',
+      calendarId: '1',
+      title: 'my schedule',
+      category: 'time',
+      dueDateClass: '',
+      start: '2020-09-18T22:30:00+09:00',
+      end: '2020-09-19T02:30:00+09:00'
+    },
+    {
+      id: '2',
+      calendarId: '1',
+      title: 'second schedule',
+      category: 'time',
+      dueDateClass: '',
+      start: '2020-09ß-18T17:30:00+09:00',
+      end: '2020-09-19T17:31:00+09:00',
+      isReadOnly: true // schedule is read-only
+    }
+  ]);
+})
