@@ -6,5 +6,6 @@ class AddColumnsToPlayers < ActiveRecord::Migration[6.0]
     add_column :players, :position, :string
     add_column :players, :introduce, :string
     add_column :players, :contact, :string
+    add_column :players, :name, :string
   end
 end

@@ -8,6 +8,8 @@ gem 'rails-i18n', '~>6.0'
 gem 'devise-i18n'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'font-awesome-sass', '~> 5.13.0'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'

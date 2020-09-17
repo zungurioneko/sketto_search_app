@@ -1,0 +1,32 @@
+<a href="https://www.windy.com/26.210/127.690?rain,2020-09-13-06,20.335,124.885,6">お天気</a>
+<% if player_signed_in? %>
+  <%= link_to "アカウント編集", edit_player_registration_path %>
+  <%= link_to "ログアウト", destroy_player_session_path, method: :delete %>
+  <%= "【ログイン中のアドレス】#{current_player.email}" %>
+<% else %>
+  <%= link_to "プレイヤーログイン", new_player_session_path %>
+<% end %>
+<% if team_signed_in? %>
+  <%= link_to "アカウント編集", edit_team_registration_path %>
+  <%= link_to "ログアウト", destroy_team_session_path, method: :delete %>
+  <%= "【ログイン中のアドレス】#{current_team.email}" %>
+<% else %>
+  <%= link_to "チームログイン", new_team_session_path %>
+<% end %>
+<hr>
+<h1>野球しようよ！！</h1>
+<h3>〜全てのスポーツマン＆ウーマンの為に〜</h3>
+<p>球場やコートを抑えたけど人数不足で困っているチームや監督さん、
+  また、所属チームで試合が無くスポーツがしたくてウズウズしているプレイヤーさん、
+  私の周りではそのようなチームやプレイヤーがたくさんいます！
+  そのような互いに互いを必要としている人達の助けになるようなアプリが開発できればなと
+  この助っ人サーチ（仮）を開発することにしました。
+</p>
+<h3>チーム</h3>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-twitter-square"></i>
+<i class="far fa-envelope"></i>
+<h3>プレイヤー</h3>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-twitter-square"></i>
+<i class="far fa-envelope"></i>

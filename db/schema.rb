@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_09_12_050907) do
     t.string "position"
     t.string "introduce"
     t.string "contact"
+    t.string "name"
     t.index ["email"], name: "index_players_on_email", unique: true
     t.index ["reset_password_token"], name: "index_players_on_reset_password_token", unique: true
   end
@@ -47,6 +48,7 @@ ActiveRecord::Schema.define(version: 2020_09_12_050907) do
     t.string "history"
     t.string "style"
     t.string "contact"
+    t.string "name"
     t.index ["email"], name: "index_teams_on_email", unique: true
     t.index ["reset_password_token"], name: "index_teams_on_reset_password_token", unique: true
   end

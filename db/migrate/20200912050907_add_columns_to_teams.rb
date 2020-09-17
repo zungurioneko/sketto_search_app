@@ -6,5 +6,6 @@ class AddColumnsToTeams < ActiveRecord::Migration[6.0]
     add_column :teams, :history, :string
     add_column :teams, :style, :string
     add_column :teams, :contact, :string
+    add_column :teams, :name, :string
   end
 end
