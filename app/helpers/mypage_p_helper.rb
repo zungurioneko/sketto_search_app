@@ -1,0 +1,2 @@
+module MypagePHelper
+end

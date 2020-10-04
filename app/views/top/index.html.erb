@@ -1,4 +1,4 @@
-<a href="https://www.windy.com/26.210/127.690?rain,2020-09-13-06,20.335,124.885,6">お天気</a>
+<a href="https://www.windy.com/?25.607,128.102,8">お天気</a>
 <% if player_signed_in? %>
   <%= link_to "アカウント編集", edit_player_registration_path %>
   <%= link_to "ログアウト", destroy_player_session_path, method: :delete %>
@@ -31,5 +31,6 @@
 <h3>プレイヤー</h3>
 <i class="fab fa-facebook"></i>
 <i class="fab fa-twitter-square"></i>
-<i class="far fa-envelope"></i>
-<div id="calendar" style="height: 800px;"></div>
+<%= link_to new_player_registration_path do %>
+  <i class="far fa-envelope"></i>メール
+<% end %>

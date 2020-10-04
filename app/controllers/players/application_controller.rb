@@ -4,4 +4,8 @@ class Players::ApplicationController < ApplicationController
 
   def show
   end
+
+  def after_sign_in_path_for(resource)
+    player_path(resource.id)
+  end
 end
