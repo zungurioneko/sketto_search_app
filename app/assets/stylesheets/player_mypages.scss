@@ -1,7 +1,11 @@
-#calendar {
-  position: absolute;
-  left: 250px;
-  right: 0;
-  bottom: 5px;
-  top: 200px;
+#player-container {
+  display: flex;
+  margin-top: 56px;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 231.4px;
+}
+
+#calendar-container {
+  
 }

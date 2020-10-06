@@ -1,16 +1,16 @@
-<!-- ***** Bootstrap用tag ***** -->
-<%= csp_meta_tag %>
-<!-- ***** 次を追加 ***** -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- ***** 以上を追加 ***** -->
-<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-<!-- ***** 略 ***** -->
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-light fixed-top">
   <a class="navbar-brand">チーム名</a>
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
-<div class=#calendar id="calendar" style="height: 800px;"></div>
+<div id="player-container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+  <div class="item">Item 4</div>
+</div>
+<div id="calendar-container">
+  <div id="calendar" style="height: 800px;"></div>
+</div>
