@@ -43,3 +43,6 @@ document.addEventListener("turbolinks:load", () => {
     }
   ]);
 })
+
+// ***** 一番下に追加（コメントは全て削除してOKです） *****
+require("bootstrap/dist/js/bootstrap")
