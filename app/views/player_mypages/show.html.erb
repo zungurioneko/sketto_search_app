@@ -1,16 +1,48 @@
 <nav class="navbar navbar-light bg-light fixed-top">
-  <a class="navbar-brand">チーム名</a>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+  <a class="navbar-brand" href="#">チーム名</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#" aria-controls="#" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="#">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">TOP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">通知</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">メール</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">天気</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">一覧</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">アカウント編集</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+    </ul>
+  </div>
 </nav>
-<div id="player-container">
-  <div class="item">Item 1</div>
-  <div class="item">Item 2</div>
-  <div class="item">Item 3</div>
-  <div class="item">Item 4</div>
-</div>
+<form class="form-inline">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+</nav>
 <div id="calendar-container">
-  <div id="calendar" style="height: 800px;"></div>
+  <div class="left-item">
+    <a href="#">通知</a><br>
+    <a href="#">メール</a><br>
+    <a href="#">天気</a><br>
+    <a href="#">一覧</a><br>
+    <a href="#">アカウント編集</a>
+  </div>
+  <div class="right-item">
+    <div id="calendar" class="calendar"></div>
+  </div>
 </div>
