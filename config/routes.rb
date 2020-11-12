@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get "players/:id" => "players#show"
   resource :team_mypages
   get "teams/:id" => "teams#show"
+  get "player_profile/show" => "player_profile#show"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
