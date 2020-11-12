@@ -1,0 +1,2 @@
+class PlayerSchedule < ApplicationRecord
+end

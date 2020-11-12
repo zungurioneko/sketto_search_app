@@ -6,6 +6,10 @@ class Players::ApplicationController < ApplicationController
   end
 
   def after_sign_in_path_for(resource)
-    player_path(resource.id)
+    player_mypages(resource.id)
+  end
+
+  def after_sign_in_path_for(resource)
+    team_mypages(resource.id)
   end
 end

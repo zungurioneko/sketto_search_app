@@ -25,21 +25,17 @@ document.addEventListener("turbolinks:load", () => {
 
     calendar.createSchedules([{
         id: '1',
-        calendarId: '1',
         title: 'my schedule',
         category: 'time',
-        dueDateClass: '',
-        start: '2020-09-18T22:30:00+09:00',
-        end: '2020-09-19T02:30:00+09:00'
+        start: '2020-10-18T22:30:00+09:00',
+        end: '2020-10-19T02:30:00+09:00'
       },
       {
         id: '2',
-        calendarId: '1',
         title: 'second schedule',
         category: 'time',
-        dueDateClass: '',
-        start: '2020-09ß-18T17:30:00+09:00',
-        end: '2020-09-19T17:31:00+09:00',
+        start: '2020-10-21T17:30:00+09:00',
+        end: '2020-10-22T17:31:00+09:00',
         isReadOnly: true // schedule is read-only
       }
     ]);

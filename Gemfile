@@ -9,6 +9,7 @@ gem 'devise-i18n'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'font-awesome-sass', '~> 5.13.0'
+gem 'gon'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

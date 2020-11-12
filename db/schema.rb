@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_12_050907) do
+ActiveRecord::Schema.define(version: 2020_10_18_062451) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "player_schedules", force: :cascade do |t|
+    t.string "place"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.text "body"
+    t.integer "player_id"
+    t.string "title"
+    t.string "bgcolor"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "players", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -32,6 +44,18 @@ ActiveRecord::Schema.define(version: 2020_09_12_050907) do
     t.string "name"
     t.index ["email"], name: "index_players_on_email", unique: true
     t.index ["reset_password_token"], name: "index_players_on_reset_password_token", unique: true
+  end
+
+  create_table "team_schedules", force: :cascade do |t|
+    t.string "place"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.text "body"
+    t.integer "team_id"
+    t.string "title"
+    t.string "bgcolor"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "teams", force: :cascade do |t|

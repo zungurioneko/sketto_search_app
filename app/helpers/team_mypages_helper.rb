@@ -1,0 +1,2 @@
+module TeamMypagesHelper
+end
